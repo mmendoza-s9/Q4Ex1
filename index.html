@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Math Robot</title>
+   
+	<!-- BS LINK -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- JS link  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<!-- FONT1 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+
+	<!-- FONT2 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+		<div class="container">
+			<body class="container-fluid d-flex justify-content-center align-items-center">
+				<div class="parent row col-sm-11 col-md-10">
+					<div class="col-sm-12 col-md-6 robot">
+					<img src="https://static.wikia.nocookie.net/gensin-impact/images/6/6b/NPC_Pers.png/revision/latest/scale-to-width-down/1000?cb=20231023100900">
+				</div>
+					<div class="col-sm-12 col-md-6 form">
+						<div class="row">
+						<h5>Hello! I'm Pers, lets help improve your math skills!</h5>
+						<h4 class="value1">Enter a value for a</h4> 
+                    	<div><input type="number" id="a"></div>
+                   		<h4 class="value2">Enter a value for b</h4> 
+                    	<div><input type="number" id="b"></div>	
+				  </div>
+				</div
+			<div class="row value-buttons">            
+				<div class="col-sm-12 col-md-6"><input type="button" onclick="round()" value="ROUND" /></div>
+				<div class="col-sm-12 col-md-6"><input type="button" onclick="power()" value="POWER" /></div>
+				<div class="col-sm-12 col-md-6"><input type="button" onclick="square()" value="SQRT" /></div>
+				<div class="col-sm-12 col-md-6"><input type="button" onclick="random()" value="RANDOM" /></div>
+				</div>
+				</div>
+			</div>
+			</div>                  
+		</div>     
+	</div>            
+</body>
+<footer>       
+	<script>
+
+		function round() {         
+			var a = document.getElementById("a").value;
+			var b = document.getElementById("b").value;
+			window.alert(Math.round(a)); 
+		}
+
+		function power() {         
+			var a = document.getElementById("a").value;
+			var b = document.getElementById("b").value;
+			window.alert(Math.pow(a,b));
+		}
+
+		function square() {         
+			var a = document.getElementById("a").value;
+			var b = document.getElementById("b").value;
+			window.alert(Math.sqrt(a));
+		}
+        
+		function random() {         
+			var a = document.getElementById("a").value;
+			var b = document.getElementById("b").value;
+			window.alert(Math.round(Math.random() * (a)))	
+		}
+
+	</script>
+</footer>
+</html>	

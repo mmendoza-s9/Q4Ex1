@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    
+}
+
+p, h4 {
+    text-align: center;
+    font-family: "Sniglet", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5 {
+    text-align: left;
+    font-family: "Margarine", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+    background-color: #c6dbf5;
+    margin-top:100px;
+    border-radius: 25px;
+    max-width: 610px;
+    padding: 15px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+}
+
+img {
+    width: 150px;
+    text-align: center;
+   
+}
+
+body {
+    background-image: url(https://i.pinimg.com/736x/61/23/93/6123934f64410d082b06a53223293f8a.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.value-buttons input{
+    width:100%;
+    margin:0 0 10px 0;
+    background-color: mintcream;
+    border: 1px solid #aab9c7;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+}
